@@ -18,7 +18,18 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14.18.1'
-      - name:  Install Yarn
+      - name: Install Yarn
         uses: bahmutov/npm-install@v1
       - name: Install Yalc
         run:  yarn global add yalc@1.0.0-pre.50
+      - name: Check versions
+        run: |
+            echo "Node version:"
+            node --version
+            echo "Java version:"
+            java -version
+            echo "yarn version:"
+            yarn --version
+            echo "yalc version:"
+            yalc --version
+            
