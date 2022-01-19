@@ -5,3 +5,4 @@ git push
 gh workflow run pipelines
 sleep 3
 gh run watch
+gh run view --log
